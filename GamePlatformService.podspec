@@ -15,7 +15,25 @@ Pod::Spec.new do |s|
   s.source_files = 'Magic/*{h,m,mm}'
   s.requires_arc = true
 
-  s.subspec 'API' do |core|
-     core.source_files = "Magic/API/*{h,m}"
+  s.subspec 'Core' do |api|
+    utils.subspec 'API' do |apple|
+      ss.source_files = 'GamePlatformService/Core/Service/Apple/**/*'
+    end
+    utils.subspec 'Service' do |service|
+      utils.subspec 'Apple' do |apple|
+        ss.source_files = 'GamePlatformService/Core/Service/Apple/**/*'
+        utils.subspec 'Pay' do |apple|
+          ss.source_files = 'GamePlatformService/Core/Service/Apple/Pay/**/*'
+      end
+      utils.subspec 'Facebook' do |apple|
+        ss.source_files = 'GamePlatformService/Core/Service/Facebook/**/*'
+      end
+      utils.subspec 'Firebase' do |apple|
+        ss.source_files = 'GamePlatformService/Core/Service/Firebase/**/*'
+      end
+      utils.subspec 'Google' do |apple|
+        ss.source_files = 'GamePlatformService/Core/Service/Google/**/*'
+      end
+    end
   end
 end
