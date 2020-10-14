@@ -35,7 +35,17 @@ typedef void (^BuyProductsResponseBlock)(SKPaymentTransaction* transcation);
 /// 购买商品
 /// @param completion 完成
 + (void)BuyProductsWithCompletion:(int)index onCompletion:(BuyProductsResponseBlock)completion;
-    
+
+/// 显示广告
++ (void)ShowAd;
+
+/// 发送邮件联系我们
+/// @param content 内容
++ (void)contactCSWinthMail:(NSDictionary*)content;
+
+/// 启动平台聊天联系我们
++ (void)contactCSWinthPlatformApp;
+
 /// 版本
 + (NSString *)GetVersion;
 @end

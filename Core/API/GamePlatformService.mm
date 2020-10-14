@@ -40,6 +40,23 @@
     }];
 }
 
+/// 显示广告
++ (void)ShowAd{
+    
+}
+
+
+/// 发送邮件联系我们
+/// @param content 内容
++ (void)contactCSWinthMail:(NSDictionary*)content{
+    
+}
+
+/// 启动平台聊天联系我们
++ (void)contactCSWinthPlatformApp{
+    
+}
+
 /// 版本号
 + (NSString *)GetVersion
 {
