@@ -1,8 +1,8 @@
 Pod::Spec.new do |s|
-  s.name             = 'magiciossdk'
+  s.name             = 'GamePlatformService'
   s.version          = '1.0.0-dev'
-  s.summary          = 'magic基础服务'
-  s.description      = 'magic基础服务'
+  s.summary          = '基础服务'
+  s.description      = '基础服务'
   s.homepage         = "https://www.52magic.com"
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'panshengneng@gmail.com' => 'panshengneng@gmail.com' }
@@ -24,6 +24,7 @@ Pod::Spec.new do |s|
         ss.source_files = 'GamePlatformService/Core/Service/Apple/**/*'
         utils.subspec 'Pay' do |apple|
           ss.source_files = 'GamePlatformService/Core/Service/Apple/Pay/**/*'
+        end
       end
       utils.subspec 'Facebook' do |apple|
         ss.source_files = 'GamePlatformService/Core/Service/Facebook/**/*'
