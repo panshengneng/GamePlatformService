@@ -10,6 +10,9 @@
 
 // 平台配置
 @interface PlatformConfig : NSObject
+@property (nonatomic, strong, readwrite) NSString *PlatformName;
+@property (nonatomic, strong, readwrite) NSString *AppKey;
+@property (nonatomic, strong, readwrite) NSString *AppSecret;
 @end
 
 // 购买商品 Block
